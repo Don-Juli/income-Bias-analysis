@@ -9,7 +9,7 @@ The findings from this analysis aim to inform strategies for employers, policyma
 Data Overview
 Rows: 32,561 individuals
 Columns: 15 features
-Key Features
+## Key Features
 Demographics:
 
 age (integer): Age of the individual
@@ -37,14 +37,14 @@ Numeric features have been capped at the 1st and 99th percentiles to reduce the 
 The target variable (salary) is imbalanced: about 24% are high earners.
 ## Key Metrics
 Key Metrics
-1. Dataset Size
+### Dataset Size
 Total records: 32,561
 Total features: 15
-2. Target Variable (salary)
+### Target Variable (salary)
 High earners (salary=1): 24%
 Low earners (salary=0): 76%
 Class imbalance: Yes
-3. Numeric Features (Median, Range)
+### Numeric Features (Median, Range)
 Feature	Median	Min	Max
 age	37	17	74
 fnlwgt	178,356	27,186	510,072
@@ -52,7 +52,7 @@ education-num	10	3	16
 capital-gain	0	0	15,024
 capital-loss	0	0	1,980
 hours-per-week	40	8	80
-4. Categorical Features (Top Categories)
+### Categorical Features (Top Categories)
 workclass: Private (70%), Self-emp-not-inc, Local-gov
 education: HS-grad, Some-college, Bachelors
 marital-status: Married-civ-spouse, Never-married, Divorced
@@ -61,36 +61,36 @@ relationship: Husband, Not-in-family, Own-child
 race: White (85%), Black, Asian-Pac-Islander
 sex: Male (67%), Female (33%)
 country: United-States (90%), Mexico, ?
-5. Data Quality
+### Data Quality
 Missing values: None (after cleaning)
 Outliers: Capped at 1st and 99th percentiles for numeric features
 ## skills and concept demostrated
-1. Data Cleaning & Preprocessing
+### Data Cleaning & Preprocessing
 Handling missing values and ensuring data completeness.
 Detecting and capping/removing outliers in numeric features.
 Encoding categorical variables for analysis and modeling.
-2. Exploratory Data Analysis (EDA)
+### Exploratory Data Analysis (EDA)
 Generating descriptive statistics for numeric and categorical features.
 Visualizing distributions (histograms, boxplots, violin plots) to understand feature spread and skewness.
 Analyzing class imbalance in the target variable.
-3. Feature Engineering
+### Feature Engineering
 Creating capped versions of features to handle outliers.
 Constructing intersectional features (e.g., education & gender) for deeper insights.
-4. Segmentation & Group Analysis
+### Segmentation & Group Analysis
 Grouping data by key features (e.g., education, occupation, gender, country) to compare high and low earners.
 Calculating and visualizing proportions of high earners within each group.
-5. Intersectional Analysis
+### Intersectional Analysis
 Exploring how combinations of features (e.g., education and gender, occupation and country) jointly affect income outcomes.
 Using heatmaps and pivot tables for multi-dimensional group comparisons.
-6. Correlation & Feature Importance
+### Correlation & Feature Importance
 Computing correlation matrices to identify relationships between numeric features and the target.
 Using machine learning models (Random Forest) to rank feature importance for predicting high salary.
-7. Anomaly Detection
+### Anomaly Detection
 Identifying and flagging outliers and anomalies in the data for further review.
-8. Data Visualization
+### Data Visualization
 Creating clear, informative plots (bar charts, heatmaps, scatterplots) to communicate findings.
 Using visualizations to highlight disparities and key patterns.
-9. Actionable Insights & Recommendations
+### Actionable Insights & Recommendations
 Translating data findings into practical strategies for business, policy, and further analysis.
 ## visualization and analysis
 [download here](http://localhost:8888/notebooks/Untitled48.ipynb)
