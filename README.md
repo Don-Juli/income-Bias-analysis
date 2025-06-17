@@ -36,7 +36,6 @@ No missing values after cleaning.
 Numeric features have been capped at the 1st and 99th percentiles to reduce the impact of outliers.
 The target variable (salary) is imbalanced: about 24% are high earners.
 ## Key Metrics
-Key Metrics
 ### Dataset Size
 Total records: 32,561
 Total features: 15
